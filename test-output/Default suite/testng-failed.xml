@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="IshuSession.WindowHandles">
+      <class name="Basics.Irctc">
         <methods>
-          <include name="Selectwithoutselectclass"/>
-          <include name="driverSetup"/>
-          <include name="driverClose"/>
+          <include name="irctcapp"/>
         </methods>
-      </class> <!-- IshuSession.WindowHandles -->
+      </class> <!-- Basics.Irctc -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

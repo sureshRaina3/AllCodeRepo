@@ -17,7 +17,7 @@ public class HandlingLocators {
 		Page p = B.newPage();
 		p.navigate("http://gmail.com");
 		Locator email =p.locator("id=identifierId");
-		Thread.sleep(2000);
+	
 		email.type("trainer@way2automation.com");
 		Locator button = p.locator("button:has-text('Next')");
 		button.click();

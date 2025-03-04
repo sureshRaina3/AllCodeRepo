@@ -12,7 +12,7 @@
 			<properties>
 			  <maven.compiler.target>1.8</maven.compiler.target>
               <maven.compiler.source>1.8</maven.compiler.source>
-				<testNG.suiteXmlFile>testng2.xml</testNG.suiteXmlFile>
+				<testNG.suiteXmlFile>testng.xml</testNG.suiteXmlFile>
 			</properties>
 			<build>
 				<plugins>
@@ -31,7 +31,9 @@
 						<artifactId>maven-surefire-plugin</artifactId>
 						<version>3.0.0-M4</version>
 						<configuration>
-							<suiteXmlFiles>
+                           <parallel>methods</parallel>
+                           <threadCount>2</threadCount>
+						   <suiteXmlFiles>
 								<suiteXmlFile>${testNG.suiteXmlFile}</suiteXmlFile>
 							</suiteXmlFiles>
 						</configuration>
@@ -61,7 +63,7 @@
 <dependency>
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
-    <version>7.9.0</version>
+    <version>7.10.2</version>
     <scope>test</scope>
 </dependency>
 <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
@@ -127,11 +129,13 @@
     <version>4.9.0-1.5.10</version>
 </dependency>
 <!-- https://mvnrepository.com/artifact/com.microsoft.playwright/playwright -->
+
 <dependency>
     <groupId>com.microsoft.playwright</groupId>
     <artifactId>playwright</artifactId>
-    <version>1.25.0</version>
+    <version>1.49.0</version>
 </dependency>
+
   
 
   </dependencies>

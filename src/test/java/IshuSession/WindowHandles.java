@@ -49,6 +49,7 @@ public class WindowHandles {
 				Set<String> windows=driver.getWindowHandles();
 				for (String newwindow: windows) {
 					if (!(newwindow.equals(CrntWindow))) {
+						
 						driver.switchTo().window(newwindow);
 						driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 						String Mobilename=driver.findElement(By.className("VU-ZEz")).getText();

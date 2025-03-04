@@ -6,12 +6,15 @@ import io.cucumber.java.en.When;
 import io.restassured.RestAssured;
 import static io.restassured.RestAssured.*;
 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
 public class methods {
 	
 	@Given("I am having the post API")
 	public void i_am_having_the_post_api(String docString) {
+		WebDriver driver = new ChromeDriver();
 	    RestAssured.baseURI="http://216.10.245.166";
 	    String response=given().log().all().headers("Content-Type","application/json").body(docString.replace("bcd", "fed")).	
 	    when().post("Library/Addbook.php").
