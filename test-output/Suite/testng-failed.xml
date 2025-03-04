@@ -3,6 +3,13 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" parallel="classes" name="Test(failed)">
     <classes>
+      <class name="IshuSession.scroll">
+        <methods>
+          <include name="Selectwithoutselectclass"/>
+          <include name="driverClose"/>
+          <include name="driverSetup"/>
+        </methods>
+      </class> <!-- IshuSession.scroll -->
       <class name="IshuSession.WindowHandles">
         <methods>
           <include name="Selectwithoutselectclass"/>
@@ -10,6 +17,20 @@
           <include name="driverClose"/>
         </methods>
       </class> <!-- IshuSession.WindowHandles -->
+      <class name="IshuSession.KeyboardActionsusingAction">
+        <methods>
+          <include name="Selectwithoutselectclass"/>
+          <include name="driverSetup"/>
+          <include name="driverClose"/>
+        </methods>
+      </class> <!-- IshuSession.KeyboardActionsusingAction -->
+      <class name="IshuSession.Alerts">
+        <methods>
+          <include name="script"/>
+          <include name="driverSetup"/>
+          <include name="driverClose"/>
+        </methods>
+      </class> <!-- IshuSession.Alerts -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

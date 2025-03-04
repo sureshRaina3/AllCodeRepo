@@ -29,6 +29,7 @@ public class day1 {
 	}
 	@AfterClass
 	public void driverClose() {
+		driver.close();
 		driver.quit();
 	}
 

@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.locators.RelativeLocator;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -20,6 +21,7 @@ public class SelectDropDown {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://letcode.in");
+		
 	}
 	
 	@Test(priority=1)
@@ -57,6 +59,8 @@ public class SelectDropDown {
 		
 		WebElement DropdowmFruits = driver.findElement(By.id("fruits"));
 		Select s = new Select(DropdowmFruits);
+		
+	
 		s.selectByVisibleText("Apple");
 		
 		WebElement Dropdowmsuperheros = driver.findElement(By.id("superheros"));
@@ -109,6 +113,11 @@ public class SelectDropDown {
 	}
 	public void Click(WebElement elementName) {
 		elementName.click();	
+	}
+	
+	public String value(WebElement elementName) {
+		String frompage =elementName.getText();
+		return frompage;	
 	}
 	
 

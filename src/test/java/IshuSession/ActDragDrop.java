@@ -17,12 +17,14 @@ Actions a;
 	@BeforeClass
 	public void driverSetup() {
 		driver = new ChromeDriver();
-		driver.manage().window().maximize();
+		//driver.manage().window().maximize();
 		driver.get("https://jqueryui.com/droppable/");
 	}
 	
 	@Test(priority=1)
 	public void Selectwithoutselectclass() {
+		System.out.println(driver.getPageSource());
+		driver.navigate().back();
 		TitleValidation("Droppable | jQuery UI");
 		WebElement DragDropframe = driver.findElement(By.className("demo-frame"));
 		driver.switchTo().frame(DragDropframe);

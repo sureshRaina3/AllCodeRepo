@@ -3,7 +3,7 @@ package PracticalCode;
 public class charoccurance {
 	public static void main(String[] args) {    
         String string1 = "Great responsibility";    
-        int count, maxcount=0;    
+        int count, maxcount = 0;    
             
         //Converts given string into character array    
         char string[] = string1.toCharArray();    
@@ -19,6 +19,7 @@ public class charoccurance {
                     string[j] = '0';    
                 }
                 if (count>maxcount) {
+                	count =maxcount;
                 
                 }
             }

@@ -9,6 +9,7 @@ public class NoOfWords {
 		System.out.println("Enter the String: ");
 		String S= sc.nextLine();
 		String WithoutSpace = S.replaceAll("\\s", "");
+	
 		System.out.println(WithoutSpace.length());
 
 	}

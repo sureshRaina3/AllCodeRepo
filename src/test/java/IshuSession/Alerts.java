@@ -91,6 +91,7 @@ public class Alerts {
 		WebElement modernAlert = driver.findElement(By.id("modern"));
 		Click(modernAlert);
 		WebElement modernAlertClose = driver.findElement(By.xpath("//button[@aria-label='close']"));
+		Thread.sleep(2000);
 		Click(modernAlertClose);
 	}
 	@AfterClass

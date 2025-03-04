@@ -1,3 +1,4 @@
+
 package CodeTrying;
 
 import java.util.Scanner;

@@ -1,8 +1,9 @@
 package CollectionFramework;
 
 import java.util.ArrayList;
+import java.util.List;
 
-public class Arraylist {
+public class Arraylistrevision   {
 	public static void main(String[] args) {
 		ArrayList<String>cars = new ArrayList<String>(5);
 		cars.add("volvo");
