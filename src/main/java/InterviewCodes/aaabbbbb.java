@@ -20,6 +20,7 @@ public class aaabbbbb {
 				
 			//System.out.print(splitinginputalpha[i]);	
 		//}
+        Character.isUpperCase('A');
 
 	}
 
