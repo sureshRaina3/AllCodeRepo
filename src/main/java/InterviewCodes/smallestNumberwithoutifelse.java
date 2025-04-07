@@ -7,6 +7,7 @@ public class smallestNumberwithoutifelse {
 		int b =100;
 		
 		int smallestnumber = a<b ?a:b;
+		System.out.println(a<b ?a:b);
 		System.out.println(smallestnumber);
 
 	}

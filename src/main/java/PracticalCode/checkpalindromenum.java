@@ -13,7 +13,7 @@ public class checkpalindromenum {
 		    while (num != 0) {
 		      remainder = num % 10;
 		      reversedNum = reversedNum * 10 + remainder;
-		      num /= 10;
+		      num =num/ 10;
 		    }
 		    
 		    // check if reversedNum and originalNum are equal
