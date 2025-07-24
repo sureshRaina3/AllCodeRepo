@@ -13,7 +13,7 @@ public class postMethodinMaps {
 	@Test
 	public void post () {
 		
-		RestAssured.baseURI="https://rahulshettyacademy.com";
+		RestAssured.baseURI="https://rahulshettyacademy.com/";
 		given().log().all().queryParam("key","qaclick123" ).header("Content-Type", "application/json")
 		.body(PostmethodJson.name())
 		.when().post("/maps/api/place/add/json")

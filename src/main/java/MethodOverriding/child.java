@@ -13,9 +13,9 @@ public class child extends parent {
 
 	public static void main(String[] args) {
 		child c =new child();		// TODO Auto-generated method stub
-		//c.method(10,10);
+		c.method(10,10);
 		//c.menthod2();
-		c.CallingParentMethod();
+		//c.CallingParentMethod();
 
 	}
 
