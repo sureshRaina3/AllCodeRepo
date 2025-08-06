@@ -17,7 +17,7 @@ public class Printwithsinglespace {
 				withsinglespace = withsinglespace+withspace;
 			}
 		}
-		System.out.println(withsinglespace.stripTrailing());
+		System.out.println(withsinglespace);
 		
 		
 
