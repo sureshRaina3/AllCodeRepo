@@ -1,5 +1,6 @@
 package InterviewCodes;
 
+import java.time.Clock;
 import java.util.Scanner;
 
 public class Printwithsinglespace {
@@ -18,6 +19,7 @@ public class Printwithsinglespace {
 			}
 		}
 		System.out.println(withsinglespace);
+
 		
 		
 

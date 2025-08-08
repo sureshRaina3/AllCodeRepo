@@ -135,8 +135,15 @@
     <artifactId>playwright</artifactId>
     <version>1.49.0</version>
 </dependency>
+      <!-- https://mvnrepository.com/artifact/com.epam.healenium/healenium-web -->
+      <dependency>
+          <groupId>com.epam.healenium</groupId>
+          <artifactId>healenium-web</artifactId>
+          <version>3.5.5</version>
+      </dependency>
 
-  
+
+
 
   </dependencies>
 </project>
